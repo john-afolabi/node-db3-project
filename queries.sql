@@ -23,6 +23,7 @@ FROM OrderDetail Od
     JOIN Product P
     ON P.Id = Od.ProductId
 WHERE Od.OrderId = "10251"
+ORDER BY P.ProductName
 
 -- Display the OrderID, Customer's Company Name and the employee's LastName for every order. All columns should be labeled clearly. Displays 16,789 records.
 
