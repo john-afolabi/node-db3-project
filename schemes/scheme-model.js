@@ -10,10 +10,10 @@ function findById(id) {
     .first();
 }
 
-function findSteps(schemeid) {
+function findSteps(scheme_id) {
   return db("steps")
     .join("schemes", "steps.scheme_id", "schemes.id")
-    .where({ schemeid })
+    .where({ scheme_id })
     .select(
       "steps.id",
       "schemes.scheme_name",
